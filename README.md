@@ -47,7 +47,14 @@ npm run preview
 
 ## Deployment
 
-A GitHub Pages workflow is included and builds with `BASE_PATH=/image-comparison-app/`. For other hosts, set `BASE_PATH` to your subpath, or leave it unset to serve from the domain root.
+The live demo is served from the `gh-pages` branch. To publish an update:
+
+```bash
+BASE_PATH=/image-comparison-app/ npm run build
+# commit the contents of dist/ to the gh-pages branch
+```
+
+For other hosts, set `BASE_PATH` to your subpath, or leave it unset to serve from the domain root.
 
 ## Notes and limitations
 
