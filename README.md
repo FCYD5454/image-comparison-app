@@ -6,6 +6,18 @@ A browser workbench for human-eye-oriented before/after image comparison. Import
 
 The demo runs in local-only mode: images stay in memory and are never uploaded. The full app includes an Express upload API for server-side storage.
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/compare-side.png" alt="Side-by-side before/after comparison" width="900">
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/compare-heatmap.png" alt="DeltaE heatmap over a comparison" width="900">
+</p>
+
+<p align="center"><sub>Sample images generated for the demo.</sub></p>
+
 ## Features
 
 - Comparison modes: **slider**, **side-by-side**, **multi-split** (2–4), and **sequence playback** with crossfade.
