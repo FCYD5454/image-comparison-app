@@ -1,7 +1,11 @@
-node_modules
-dist
-dist-ssr
-.vite
+node_modules/
+dist/
+frontend/dist/
+server/dist/
+server/uploads/
+.env
+.env.*
+!.env.example
 *.local
 .DS_Store
 Thumbs.db
