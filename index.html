@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Local-only before/after image comparison tool" />
+    <meta name="theme-color" content="#0066cc" />
+    
+    <!-- CSP Meta Tag (dev-friendly; allows Vite HMR, workers) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; connect-src 'self' ws: wss:; worker-src 'self' blob:" />
+    
+    <!-- PWA -->
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" type="image/png" href="./icon-192.png" />
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="./icon-192.png" />
+    
+    <title>Image Comparison App</title>
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
+      /* 載入動畫 */
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 18px;
+        color: #666;
+      }
+    </style>
+    <script type="module" crossorigin src="/image-comparison-app/assets/index-B52_D7BX.js"></script>
+    <link rel="modulepreload" crossorigin href="/image-comparison-app/assets/react-vendor-DghaKJPf.js">
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading">載入中...</div>
+    </div>
+  </body>
+</html>
